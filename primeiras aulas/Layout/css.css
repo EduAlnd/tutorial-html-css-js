@@ -1,0 +1,34 @@
+#page {
+    width: 1000px;
+    height: 1000px;
+    background-color: aqua;
+    margin: 0 auto 0 auto;
+}
+#header {
+    height: 70px;
+    width: 100%;
+    background-color: rgb(255, 30, 30);
+    text-align: center;
+}
+.dolado {
+    display: flex;
+}
+
+#content {
+    height: 925px;
+    width: 850px;
+    background-color: blueviolet;
+    text-align: center;
+    
+}
+#sidebar {
+    height: 925px;
+    width: 150px;
+    background-color: blue;
+    text-align: center;
+}
+#footer {
+    height: 70px;
+    width: 100%;
+    background-color: red;
+    text-align: center;
