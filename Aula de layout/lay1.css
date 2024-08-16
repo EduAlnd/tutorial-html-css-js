@@ -1,0 +1,48 @@
+#page{
+    height:1000px ;
+    width: 1000px;
+    background-color: beige;
+    margin: 0 auto 0 auto;
+}
+#header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(112, 112, 201);
+}
+.dolado {
+    display: flex;
+}
+#sidebar{
+    height: 800px;
+    width: 150px;
+    background-color: rgb(158, 97, 97);
+    text-align: center;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    
+}
+#content{
+    height: 800px;
+    width: 700px;
+    background-color: rgb(62, 110, 110);
+    text-align: center;
+    font-size: 50px;
+}
+#sidebar2{
+    height: 800px;
+    width: 150px;
+    background-color: rgb(158, 97, 97);
+    text-align: center;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(112, 112, 201);
+    text-align: center;
+    font-size: 50px;
+}

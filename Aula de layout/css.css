@@ -7,8 +7,9 @@
 #header {
     height: 70px;
     width: 100%;
-    background-color: rgb(255, 30, 30);
+    background-color: rgb(201, 119, 119);
     text-align: center;
+    font-size: 50px;
 }
 .dolado {
     display: flex;
@@ -17,18 +18,26 @@
 #content {
     height: 925px;
     width: 850px;
-    background-color: blueviolet;
+    background-color: rgb(117, 90, 141);
     text-align: center;
+    font-size: 50px;
+    
     
 }
 #sidebar {
     height: 925px;
     width: 150px;
-    background-color: blue;
+    background-color: rgb(87, 87, 192);
     text-align: center;
+    font-size: 50px;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    
 }
 #footer {
     height: 70px;
     width: 100%;
-    background-color: red;
+    background-color: rgb(201, 119, 119);
     text-align: center;
+    font-size: 50px;
+}
