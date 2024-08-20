@@ -8,6 +8,8 @@
     height: 100px;
     width: 100%;
     background-color: rgb(112, 112, 201);
+    font-size: 50px;
+    text-align: center;
 }
 .dolado {
     display: flex;
