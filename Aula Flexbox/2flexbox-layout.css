@@ -2,5 +2,21 @@
     display: flex;
     background-color: #433633;
     width: 1000px;
-    height: 5cm;
+    height: 100px;
+    justify-content: center;
+    margin: 0 auto;
+    text-align: center;
 }
+#logo{
+    background-color: #f7f0f5;
+    height: 40px;
+    width: 75px;
+    margin: 30px 550px 30px 0 ;
+}
+#nav-bar{
+    background-color: #f7f0f5;
+    height: 40px;
+    width: 275px;
+    margin: 30px 0 30px 0 ;
+}
+/* Termino do header, inicio do main, primeira parte*\
