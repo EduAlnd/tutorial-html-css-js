@@ -11,18 +11,18 @@ body{
     text-align: center;
 }
 #logo{
-    background-color: #F7F0F5;
+    background-color: #F1DAC4;
     height: 40px;
     width: 75px;
     margin: 15px 600px 15px 0 ;
 }
 #nav-bar{
-    background-color: #F7F0F5;
+    background-color: #F1DAC4;
     height: 40px;
     width: 275px;
     margin: 15px 0 15px 0 ;
 }
-/* Termino do header, inicio do content1 */
+/*Termino do header, inicio do content1 */
 .content1{
     background-color:#8F857D;
     display: flex;
@@ -33,7 +33,7 @@ body{
     align-items: center;
     text-align: center;
 }
-/* Conteúdo esquerdo*/
+/*Conteúdo esquerdo*/
 .info1{
     display: block;
     height: 100px;
@@ -65,7 +65,7 @@ body{
     margin: 0 0 0 15px;
     
 }
-/* Conteúdo direito*/
+/*Conteúdo direito*/
 .c1-img1{
     height: 250px;
     width: 400px;
@@ -99,7 +99,7 @@ body{
     justify-content: space-around;
     
 }
-/*Info esquerda*/
+/*Conteúdo esquerda*/
 .content3-info1{
     display: block;
     justify-content: center;
@@ -118,7 +118,7 @@ body{
     height: 100px;
     width: 300px;
 }
-/*Info direita*/
+/*Conteúdo direita*/
 .content3-info2{
     display: block;
     justify-content: center;
@@ -137,7 +137,7 @@ body{
     width: 550px;
 }
 /*Termino do content3, inicio do content4*/
-/*Info do lado esquerdo*/
+/*Conteúdo do lado esquerdo*/
 .content4{
     background-color: #DECBB7;
     height: 350px;
@@ -160,13 +160,13 @@ body{
     height: 75px;
     width: 275px;
 }
-/*Info do meio*/
+/*Conteúdo do meio*/
 #c4-info3{
     background-color: #8F857D;
     height: 250px;
     width: 300px;
 }
-/*Info do lado direito*/
+/*Conteúdo do lado direito*/
 #c4-info4{
     background-color: #8F857D;
     height: 75px;
