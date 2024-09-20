@@ -54,11 +54,84 @@ header nav ul li a:hover{
 }
 
 main{
+
     color: white;
+    
 }
 
 .active{
     border-bottom: 5px solid #69A843;
     color: #FF7A01;
 }
+/*Tabela*/
+table{
+    /*border: 1px solid rgba(255, 255, 255, 0.849);*/
+    border-collapse: collapse;
+}
+th, td{
+    /* border: 1px solid rgba(255, 255, 255, 0.849);*/
+    padding: 10px;
+}
 
+th:nth-child(1){
+    background-color: rgba(88, 117, 71, 0.822);
+}
+th:nth-child(3){
+    background-color: rgba(88, 117, 71, 0.822);
+}
+th:nth-child(2) {
+    background-color: rgba(149, 168, 137, 0.822);
+}
+tr:nth-child(even){
+    background-color: rgba(56, 77, 44, 0.822);
+}
+tr:nth-child(odd){
+    background-color: rgba(92, 124, 74, 0.822);
+}
+.two-rows-line{
+    background-color: rgba(117, 156, 95, 0.822);
+}
+/*Formulario*/
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+fieldset{
+    border: none;
+}
+fieldset:first-child{
+    display: flex;
+    flex-direction: column;
+}
+input[type=text], input[type=password], select, textarea {
+    padding: 3px 8px;
+    border-radius: 10px;
+    background-color: #b9b9b977;
+    border: none;
+    margin:  5px 0 10px 0;
+    color: white;
+    font-size: 16px;
+
+}
+select{
+    width: fit-content;
+}
+
+input[type=submit]{
+   
+    width: 50%;
+    background-color: #ff7c01;
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    width: 50%;
+    background-color: #69A843;
+}
