@@ -25,8 +25,7 @@ header .wrapper{
     color: white;
     display: flex;
     gap: 10px;
-    align-items: center;
-    
+    align-items: center; 
 }
  header img{
     margin: 0;
@@ -45,32 +44,26 @@ header nav ul li a{
     text-decoration: none;
     display: block;
     padding: 30px 20px;
-    
 }
 header nav ul li a:hover{
     color: #FF7A01;
-    border-bottom: 5px solid #69A84377;
-    
+    border-bottom: 5px solid #69A84377; 
 }
-
 main{
-
     color: white;
-    
 }
-
 .active{
     border-bottom: 5px solid #69A843;
     color: #FF7A01;
 }
 /*Tabela*/
 table{
-    /*border: 1px solid rgba(255, 255, 255, 0.849);*/
+/*border: 1px solid rgba(255, 255, 255, 0.849);*/
     border-collapse: collapse;
 }
 th, td{
-    /* border: 1px solid rgba(255, 255, 255, 0.849);*/
-    padding: 10px;
+/* border: 1px solid rgba(255, 255, 255, 0.849);*/
+padding: 10px;
 }
 
 th:nth-child(1){
@@ -99,7 +92,6 @@ form{
     width: 50%;
     margin: 0 auto;
 }
-
 fieldset{
     border: none;
 }
@@ -115,14 +107,11 @@ input[type=text], input[type=password], select, textarea {
     margin:  5px 0 10px 0;
     color: white;
     font-size: 16px;
-
 }
 select{
     width: fit-content;
 }
-
 input[type=submit]{
-   
     width: 50%;
     background-color: #ff7c01;
     border-radius: 20px;

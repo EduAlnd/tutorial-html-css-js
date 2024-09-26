@@ -25,7 +25,6 @@
     font-size: 50px;
     writing-mode: vertical-lr;
     text-orientation: upright;
-    
 }
 #content{
     height: 800px;
@@ -38,7 +37,6 @@
     height: 100px;
     width: 850px;
     background-color: rgb(112, 112, 201);
-    
     text-align: center;
     font-size: 50px;
 }

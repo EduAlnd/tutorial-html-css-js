@@ -39,7 +39,6 @@ body{
     height: 100px;
     width: 250px;
     margin: 0 40px;
-
 }
 #c1-info1{
     background-color: #DECBB7;
@@ -56,14 +55,12 @@ body{
     height: 40px;
     width: 120px;
     margin: 0 15px 0 0;
-    
 }
 #c1-info3{
     background-color: #DECBB7;
     height: 40px;
     width: 120px;
     margin: 0 0 0 15px;
-    
 }
 /*Conteúdo direito*/
 .c1-img1{
@@ -97,7 +94,6 @@ body{
     text-align: center;
     display: flex;
     justify-content: space-around;
-    
 }
 /*Conteúdo esquerda*/
 .content3-info1{
@@ -111,7 +107,6 @@ body{
     height: 100px;
     width: 300px;
     margin: 0 0 50px 0;
-    
 }
 #c3-info2 {
     background-color: #DECBB7;
@@ -129,7 +124,6 @@ body{
     height: 100px;
     width: 550px;
     margin: 0 0 50px 0;
-    
 }
 #c3-info4 {
     background-color: #DECBB7;
