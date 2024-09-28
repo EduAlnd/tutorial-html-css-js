@@ -1,0 +1,127 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    
+}
+#display{
+    width: 700px;
+    height: 700px;
+    background-color: rgba(199, 199, 199, 0.486);
+    display: block;
+    margin: auto;
+
+}
+h4{
+    font-size: xx-large;
+    text-align: center;
+}
+p{
+    font-size: x-large;
+    font-weight: bold;
+    color: rgb(59, 47, 63);
+    text-align: center;
+}
+#flex{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+}
+.flex1{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(60, 194, 194);  
+}
+#block{
+    display: block;
+    
+}
+#block :nth-child(1), #block :nth-child(3){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(60, 194, 194);  
+    margin: 0 auto;
+}
+#block :nth-child(2){
+    height: 100px;
+    width: 100px;
+    background-color: rgb(16, 138, 138);  
+    margin: 0 auto;
+}
+#justifycontent{
+    background-color: rgba(155, 155, 155, 0.404);
+    width: 700px;
+    height: 800px;
+    margin: auto;
+}
+
+#start, #center, #around{
+    height: 100px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(218, 67, 67);
+}
+#start{
+    justify-content: flex-start;
+}
+
+#center{
+    justify-content: center;
+}
+#around{
+    justify-content: space-around;
+}
+#between, #end, #evenly{
+    height: 100px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(28, 172, 105);
+}
+#evenly{
+    justify-content: space-evenly;
+}
+#between{
+    justify-content: space-between;
+}
+#end{
+    justify-content: flex-end;
+}
+.bet{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(112, 216, 129);
+}
+#justifycontent p{
+    color: rgb(0, 0, 0);
+}
+#alignitems{
+    background-color: rgba(189, 189, 189, 0.404);
+    width: 700px;
+    height: 1200px;
+    margin: auto;
+}
+#start2, #center2, #stretch{
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(218, 67, 67);
+}
+#baseline, #end2{
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(67, 218, 193);
+}
+.bet1{
+    width: 80px;
+    height: 80px;
+    background-color: rgb(112, 216, 129);
+}
