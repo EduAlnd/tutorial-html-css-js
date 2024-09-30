@@ -104,24 +104,40 @@ p{
     height: 1200px;
     margin: auto;
 }
-#start2, #center2, #stretch{
+#start2, #center2{
     height: 200px;
     width: 600px;
     margin: auto;
     display: flex;
-    align-items: center;
     background-color: rgb(218, 67, 67);
 }
-#baseline, #end2{
+#end2{
     height: 200px;
     width: 600px;
     margin: auto;
     display: flex;
-    align-items: center;
     background-color: rgb(67, 218, 193);
 }
 .bet1{
-    width: 80px;
-    height: 80px;
+    
     background-color: rgb(112, 216, 129);
+}
+
+#center2{
+    align-items: center;
+}
+#end2{
+    align-items: flex-end;
+}
+#start2{
+    align-items: flex-start;
+}
+#stretch{
+    align-items: stretch;
+    height: 200px;
+    width: 600px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    background-color: rgb(67, 218, 193);
 }
