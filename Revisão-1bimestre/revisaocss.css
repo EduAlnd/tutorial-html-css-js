@@ -61,7 +61,7 @@ p{
     margin: auto;
     display: flex;
     align-items: center;
-    background-color: rgb(218, 67, 67);
+    background-color: rgb(60, 194, 194);
 }
 #start{
     justify-content: flex-start;
@@ -79,7 +79,7 @@ p{
     margin: auto;
     display: flex;
     align-items: center;
-    background-color: rgb(28, 172, 105);
+    background-color: rgb(16, 138, 138);
 }
 #evenly{
     justify-content: space-evenly;
@@ -101,7 +101,7 @@ p{
 #alignitems{
     background-color: rgba(189, 189, 189, 0.404);
     width: 700px;
-    height: 1200px;
+    height: 900px;
     margin: auto;
 }
 #start2, #center2{
@@ -109,20 +109,24 @@ p{
     width: 600px;
     margin: auto;
     display: flex;
-    background-color: rgb(218, 67, 67);
+    background-color: rgb(60, 194, 194);
 }
 #end2{
     height: 200px;
     width: 600px;
     margin: auto;
     display: flex;
-    background-color: rgb(67, 218, 193);
+    background-color: rgb(16, 138, 138);
 }
 .bet1{
-    
+    width: 80px;
+    height: 80px;
     background-color: rgb(112, 216, 129);
 }
+.bet2{
 
+    background-color: rgb(112, 216, 129);
+}
 #center2{
     align-items: center;
 }
@@ -134,10 +138,101 @@ p{
 }
 #stretch{
     align-items: stretch;
-    height: 200px;
+    height: 170px;
     width: 600px;
     margin: auto;
     display: flex;
     gap: 50px;
-    background-color: rgb(67, 218, 193);
+    background-color: rgb(16, 138, 138);
+}
+#seletores{
+    margin:50px auto;
+    width: 700px;
+    height: 300px;
+}
+div#card{
+    background-color: rgba(189, 189, 189, 0.404);
+    display: block;
+    padding: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    
+    
+}
+div#card h1{
+    background-color: rgb(16, 138, 138);
+    width: 600px;
+    height: 150px;
+    margin: 0px auto;
+    display: flex;
+    font-size: larger;
+    font-weight: bolder;
+    color: aliceblue;
+}
+div#card h1 span{
+    background-color: rgb(60, 194, 194);
+    width: 300px;
+    height: 50px;
+    margin: 0px auto;
+    align-self: center;
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#divs{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: larger;
+    font-weight: bolder;
+    color: aliceblue;
+}
+#divs div.box:nth-child(1){
+    width: 395px;
+    height: 145px;
+    background-color: rgb(60, 194, 194);
+    margin: 10px 0;
+    padding: 5px;
+}
+#divs div.box:nth-child(2){
+    width: 395px;
+    height: 145px;
+    background-color: rgb(60, 194, 194);
+    margin: 10px 0;
+    padding: 5px;
+}
+#div2{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: larger;
+    font-weight: bolder;
+    color: aliceblue;
+}
+#div2 div.box{
+    width: 395px;
+    height: 145px;
+    background-color: rgb(16, 138, 138);
+    margin: 10px 0;
+    padding: 5px;
+}
+#div2>p.box{
+    width: 395px;
+    height: 145px;
+    background-color: rgb(16, 138, 138);
+    padding: 5px;
+    margin: 10px 0;
+    color: aliceblue;
+}
+#div2 div.box p.box{
+    background-color: rgb(60, 194, 194);
+    color: aliceblue;
+}
+p.box span{
+    background-color: rgb(60, 194, 194);
+}
+#divcard{
+    color: rgb(0, 0, 0);
+    
 }
