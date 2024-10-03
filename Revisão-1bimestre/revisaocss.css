@@ -3,6 +3,12 @@ html, body{
     padding: 0;
     
 }
+#rev{
+    width: 1000px;
+    height: 4000px;
+    margin: 0 auto;
+}
+
 #display{
     width: 700px;
     height: 700px;
@@ -49,7 +55,7 @@ p{
     margin: 0 auto;
 }
 #justifycontent{
-    background-color: rgba(155, 155, 155, 0.404);
+    background-color: rgba(199, 199, 199, 0.486);
     width: 700px;
     height: 800px;
     margin: auto;
@@ -99,7 +105,7 @@ p{
     color: rgb(0, 0, 0);
 }
 #alignitems{
-    background-color: rgba(189, 189, 189, 0.404);
+    background-color: rgba(199, 199, 199, 0.486);
     width: 700px;
     height: 900px;
     margin: auto;
@@ -148,16 +154,14 @@ p{
 #seletores{
     margin:50px auto;
     width: 700px;
-    height: 300px;
+    height: 700px;
+    background-color: rgba(199, 199, 199, 0.486);
 }
 div#card{
-    background-color: rgba(189, 189, 189, 0.404);
     display: block;
-    padding: 50px;
+    margin: 0 50px 0 50px;
     font-size: larger;
     font-weight: bolder;
-    
-    
 }
 div#card h1{
     background-color: rgb(16, 138, 138);
@@ -235,4 +239,31 @@ p.box span{
 #divcard{
     color: rgb(0, 0, 0);
     
+}
+
+#tab{
+    width: 700px;
+    height: 400px;
+    background-color: rgba(189, 189, 189, 0.404) ;
+    margin: 00px auto;
+} 
+#tabela{
+    display:flex;
+}
+ #table table, #table tr, #table td, #table th{
+    border: 3px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    margin: 0 50px;
+}
+table{
+    width: 250px;
+    height: 250px;
+}
+#table td{
+    text-align: center;
+    font-size: larger;
+}
+#table2 table, #table2 tr, #table2 td, #table2 th{
+    border: 3px solid rgb(0, 0, 0);
+    margin: 0 50px;
 }
