@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <script>
+        //comando de impressão
+        console.log("Hello World JS");
+               
+        //Jeitos de criar uma variavel
+        var nome = "Eduarda"; 
+        // Pode redeclar(repetir var nome) em tempo de execução, pode mudar o valor da variavel
+        
+        let idade = 18; 
+        // Não pode redeclar(repetir var nome) em tempo de execução, pode mudar o valor da variavel
+        
+        const sobrenome = "Gonçalves"; 
+        // Não pode redeclar(repetir var nome) em tempo de execução, não pode mudar o valor da variavel
+        
+        // Juntando duas variaveis (concatenar)
+        console.log("Olá, "+ nome + " " + idade);
+       
+        //Outro jeito, com crase `
+        console.log(`Olá, ${nome} ${sobrenome}`);
+       
+        //Constante feita de duas constantes
+        const name = "Ana";
+        const s_nome = "Julia";
+        const nome_inteiro = name + " " + s_nome;
+        console.log(nome_inteiro);
+       
+        //Objetos
+        const user ={
+            id: 10,
+            nome: "Paulo",
+            email:"paulo@gmail.com",
+            "Nome Completo": "Paulo Luiz",
+            nomeId: this.nome + " " + "Alves",
+            idAdmins: [4, 20, 30, 40],
+            endereco: {
+                rua: "Josefa Santana",
+                numero: 10
+            }
+        }
+       
+        //Como referenciar qual propriedade eu quero usar (com ".")
+        console.log(`Olá, ${user.nome}`);
+        console.log(`Olá, ${user.nomeId}`);
+       
+        //Referenciando uma propriedade com espaço
+        console.log(`Olá, ${user["Nome Completo"]}`);
+       
+        //Referenciando um array no objeto
+        console.log(`Meu id de Admin é ${user.idAdmins[2]}`);
+       
+        //Referenciando um objeto que esta dentro de um objeto
+         console.log(`Moro na rua ${user.endereco.rua}`);
+       
+       
+        //Array
+        const idAdmins = [1, 5, 10, 80, user.nome, {rua: "Boldos", numero: 0}];
+        
+        // Referenciando um dado especifico
+         console.log(`Meu id de Admin é ${idAdmins[2]}`);
+        console.log(`Meu nome como Admin é ${idAdmins[4]}`);
+        console.log(`Meu nome como Admin é ${idAdmins[4]}, moro em ${idAdmins[5].rua}`);
+       </script>
+</body>
+</html>
+
+
+
+

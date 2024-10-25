@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS 2</title>
+</head>
+<body>
+    <h1>Escolha sua cor</h1>
+    <input type="text" name="" id="cor">
+    <button id="butao" onclick="mudarCor()">Aplicar a cor</button>
+    <div id="div" style="background-color: white;
+    border: 2px solid black; height: 350px;">
+    </div>
+    //2
+    <h1>Calculadora</h1>
+    <input type="number" name="" id="num1" style="width: 35px ;">
+    <input type="number" name="" id="num2" style="width: 35px ;">
+    <div style="display: flex; gap: 5px;">
+        <button id="mais" style="width: 40px ;" onclick="calcularM()" value="+">+</button>
+        <button id="menos" style="width: 40px ;" onclick="calcularm()" value="-">-</button>
+    </div>
+    <div id="result" style="border: 1px solid black; width: 80px; height: 20px;"></div>
+    
+</body>
+<script>
+    
+    const mudarCor = () => {
+        const text = document.getElementById('cor')
+        const div = document.getElementById('div')
+        div.style.background = textvalue
+    }
+    const calcularM = () => {
+        const num1 = document.getElementById('num1')
+        const num2 = document.getElementById('num2')
+        const result = document.getElementById('result')
+        if(num1.value == ){
+            result.innerHTML = `${+num1.value + +num2.value}`
+        }
+        else{
+            //result.innerHTML = `${+num1.value - +num2.value}`
+        }
+          
+    }
+
+</script>
+
+</html>
