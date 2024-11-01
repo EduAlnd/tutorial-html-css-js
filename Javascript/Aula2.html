@@ -30,10 +30,19 @@
     <div id="box1" style="height: 150px; border: 2px solid black; 
     width: 350px; display: flex; justify-content: center; flex-wrap: wrap;" >
     </div>
-    <div style="height: 50px; width: 120px; border: 2px solid black; display: flex; 
+    <div id="res"style="height: 50px; width: 120px; border: 2px solid black; display: flex; 
     justify-content: center;">
         <p id="selecao">cor selecionada</p>
+        
     </div>
+    <button id="btnSe" onclick="query()">Query</button>
+    <h1>Query selector</h1>
+    <div id="h1sel">
+        <h1>Query selector</h1>
+        <p>Arroz</p>
+        <p>Feijao</p>
+    </div>
+    <h2>Cachorro</h2>
 </body>
 <script>
     //1
@@ -57,7 +66,26 @@
           
     }
     //3
-   
+    
+    const adicionar = () =>{
+        const txtcor = document.getElementById('corad')
+        const gal =document.getElementById('box1')
+        gal.innerHTML += `<button style="height: 50px; border: 2px solid black; 
+    width: 50px; background-color: ${txtcor.value} ;" onclick="corS('${txtcor.value}')" >
+    </button>`
+    }
+    const corS = (sel) => {
+        const selecao = document.getElementById('selecao')
+        const res = document.getElementById('res')
+        selecao.innerHTML = `${sel}`
+        res.style.backgroundColor = `${sel}`
+    }
+   const query= () =>{
+    const sel = document.querySelector('#h1sel')
+    const h1 = sel.querySelector('h1')
+    console.log(sel)
+   }
+
 
 </script>
 
