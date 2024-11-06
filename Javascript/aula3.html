@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monte seu personagem</title>
-    <link rel="stylesheet" href="lego.css'">
+    <link rel="stylesheet" href="/Javascript/lego.css">
 </head>
 <body>
     <header>
@@ -30,19 +30,19 @@
            
             <div id="cabeca">
                 <p><strong>Cabeça</strong></p>
-                    <img onclick="mudar('/imgs/cabeça_default.webp')" src="/imgs/cabeça_default.webp" 
+                    <img onclick="mudar('/imgs/cabeça_default.webp', 'cab')" src="/imgs/cabeça_default.webp" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">
             </div>
             <div id="corpo">
                 <p> <strong>Corpo</strong></p>
-                <img onclick="mudar('/imgs/torso.jpeg')" src="/imgs/torso.jpeg" 
+                <img onclick="mudar('/imgs/torso.jpeg', 'c')" src="/imgs/torso.jpeg" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">
             </div>
             <div id="perna">
                 <p><strong>Perna</strong></p>
-                <img onclick="mudar('/imgs/pernas.jpeg')" src="/imgs/pernas.jpeg" 
+                <img onclick="mudar('/imgs/pernas.jpeg', 'p')" src="/imgs/pernas.jpeg" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">
             </div>
@@ -68,28 +68,37 @@
                 
                 if(sele.value === 'cabeca'){
                     const divCab = document.querySelector('#cabeca')
-                    divCab.innerHTML +=  `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    divCab.innerHTML +=  `<img onclick="mudar('${url.value}', 'cab')" src="${url.value}" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">`
                 }
                 else if(sele.value === 'corpo'){
                     const divCor = document.querySelector('#corpo')
-                    divCor.innerHTML += `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    divCor.innerHTML += `<img onclick="mudar('${url.value}', 'c')" src="${url.value}" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">`
                     
                 }
                 else if(sele.value === 'perna'){
                     const divPer = document.querySelector('#perna')
-                    divPer.innerHTML +=  `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    divPer.innerHTML +=  `<img onclick="mudar('${url.value}', 'p')" src="${url.value}" 
                     style="height: 50px; width: 50px; border: 1px solid black; 
                     flex-wrap: wrap;">`
                 }
             }
-            const mudar =()=>{
+            const mudar =(link, local)=>{
                 const topo = document.querySelector('#topo')
                 const meio = document.querySelector('#meio')
                 const baixo = document.querySelector('#baixo')
+                if(local==='cab'){
+                    topo.innerHTML=`<img src="${link}" style="width: 150px;" height="150px">`
+                }
+                else if(local==='c'){
+                    meio.innerHTML=`<img src="${link}" style="width: 300px;" height="200px">`
+                }
+                else if(local==='p'){
+                    baixo.innerHTML=`<img src="${link}" style="width: 150px;" height="200px">`
+                }
             }
     
         </script>
