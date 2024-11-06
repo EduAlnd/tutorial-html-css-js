@@ -30,30 +30,70 @@
            
             <div id="cabeca">
                 <p><strong>Cabeça</strong></p>
-                
+                    <img onclick="mudar('/imgs/cabeça_default.webp')" src="/imgs/cabeça_default.webp" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">
             </div>
             <div id="corpo">
-                <strong>Corpo</strong>
-                
+                <p> <strong>Corpo</strong></p>
+                <img onclick="mudar('/imgs/torso.jpeg')" src="/imgs/torso.jpeg" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">
             </div>
             <div id="perna">
-                <strong>Perna</strong>
-                
+                <p><strong>Perna</strong></p>
+                <img onclick="mudar('/imgs/pernas.jpeg')" src="/imgs/pernas.jpeg" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">
             </div>
 
           
         </div>
         <div id="modelo">
             <div id="topo">
-
+                <img src="/imgs/cabeça_default.webp" style="height: 150px;">
             </div>
             <div id="meio">
-
+                <img src="/imgs/torso.jpeg" style="width: 300px;" height="200px">
             </div>
             <div id="baixo">
-
+                <img src="/imgs/pernas.jpeg" style="width: 150px;" height="200px">
             </div>
         </div>
+        <script>
+
+            const add = () => {
+                const url = document.querySelector('#url')
+                const sele= document.querySelector('#parte')
+                
+                if(sele.value === 'cabeca'){
+                    const divCab = document.querySelector('#cabeca')
+                    divCab.innerHTML +=  `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">`
+                }
+                else if(sele.value === 'corpo'){
+                    const divCor = document.querySelector('#corpo')
+                    divCor.innerHTML += `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">`
+                    
+                }
+                else if(sele.value === 'perna'){
+                    const divPer = document.querySelector('#perna')
+                    divPer.innerHTML +=  `<img onclick="mudar('${url.value}')" src="${url.value}" 
+                    style="height: 50px; width: 50px; border: 1px solid black; 
+                    flex-wrap: wrap;">`
+                }
+            }
+            const mudar =()=>{
+                const topo = document.querySelector('#topo')
+                const meio = document.querySelector('#meio')
+                const baixo = document.querySelector('#baixo')
+            }
+    
+        </script>
     </main>
+   
 </body>
 </html>
