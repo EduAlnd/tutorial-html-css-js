@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IF Finance</title>
     <link rel="stylesheet" href="css/styleif.css">
-   
+    <link rel="script" href="./js/main.js">
+   <script src="./js/main.js"></script>
     </head>
     <body>
         <header>
@@ -29,43 +30,34 @@
             </div>
         </header>
         <main class="wrapper">
-            <h1>Home</h1>
-            <input type="text" name="" id="text">
-            <button id="button", onclick="salvar()">
-                Salvar
-            </button>
-            <button id="button", onclick="mudar()">
-                Mudar cor
-            </button>
-            <div id="resultado">
-
+            <div class="flexBetween">
+                <h1>Home</h1>
+                <button style="width: 115px; height: 30px;" onclick="flex()">+ Adicionar</button>
             </div>
-        </main>
-    </body>
-    <script>
-
-        //Botão
-        //const button =document.getElementById('button')
-        //console.log(button)
-        const mudar = () => {
             
-            const logo = document.getElementById('logo')
-            const logoColor = logo.style.background
-            if(logoColor === "white"){
-                logo.style.background = "black"
-            }
-            else{
-                logo.style.background = "white"
-            }
-            console.log("Clicado....")
-        }
-        const salvar = () => {
-            const text = document.getElementById('text')
-            const result = document.getElementById('resultado')
-            result.innerHTML = `<p>${text.value}</p>` 
+        </main>
+        <div class="modal" onclick="fechar(event)">
+            <main>
+               <header class="flexBetween">
+                <h1>Adicionar ação</h1>
+                <button class="btnModal" onclick="fechar(event)">✕</button>
+            </header> 
+            <form action="">
+                <label for="">Nome</label>
+                <input type="text">
+                <label for="">Sigla</label>
+                <input type="text">
+                <label for="">Valor</label>
+                <input type="text">
+                <label for="">Quant.</label>
+                <input type="number">
+                <h1>Total: </h1>
+                
 
-        }
- 
-        
-     </script>
+            </form>
+            </main>
+
+        </div>
+    </body>
+
 </html>

@@ -111,8 +111,7 @@ input[type=text], input[type=password], select, textarea {
 select{
     width: fit-content;
 }
-input[type=submit]{
-    width: 50%;
+input[type=submit], button{
     background-color: #ff7c01;
     border-radius: 20px;
     padding: 10px 20px;
@@ -120,7 +119,61 @@ input[type=submit]{
     font-weight: bold;
     cursor: pointer;
 }
-input[type=submit]:hover{
+input[type=submit]:hover, button:hover{
     width: 50%;
     background-color: #69A843;
 }
+.flexBetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal{
+    background-color: #00000095;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal main{
+    background-color: rgb(48, 48, 48);
+    width: 700px;
+    height: 500px;
+    border-radius: 40px;
+    padding: 20px;
+    
+}
+.modal main header{
+    background-color: transparent;
+    height: auto;
+}
+.modal main header h1{
+    background-color: none;
+    padding: 0;
+    margin: 0;
+ 
+}
+.modal main header button{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    color: white;
+    width: 50px;
+    height: 50px;
+    font-size: xx-large;
+ 
+}
+.modal main header button:hover{
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: xx-larger;
+ 
+}
+
+
