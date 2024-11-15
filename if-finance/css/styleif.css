@@ -99,7 +99,7 @@ fieldset:first-child{
     display: flex;
     flex-direction: column;
 }
-input[type=text], input[type=password], select, textarea {
+input[type=text], input[type=password], input[type=number],select, textarea {
     padding: 3px 8px;
     border-radius: 10px;
     background-color: #b9b9b977;
@@ -135,7 +135,7 @@ input[type=submit]:hover, button:hover{
     left: 0;
     bottom: 0;
     right: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -150,6 +150,7 @@ input[type=submit]:hover, button:hover{
 .modal main header{
     background-color: transparent;
     height: auto;
+    margin: 0 0 10px 0;;
 }
 .modal main header h1{
     background-color: none;
@@ -174,6 +175,80 @@ input[type=submit]:hover, button:hover{
     color: white;
     font-size: xx-larger;
  
+}
+.modal main form #quantity{
+    background-color: #b9b9b977;
+    border-radius:20px;
+    border: none;
+    font-size: 16px;
+}
+.modal main form input[type=text],.modal main form input[type=number]{
+    border-radius: 10px;
+    background-color: #b9b9b977;
+    border: none;
+    margin:  0 0 10px 0;
+    color: white;
+    font-size: 16px;
+}
+.modal main form input[type=submit]{
+    margin: 0 auto;
+}
+#card-list{
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+ width: 300px;
+ height: 175px;
+ background-color: rgb(85, 85, 85);
+ border-radius: 20px;
+ padding: 10px;
+}
+/*card header*/
+.card header{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: transparent;
+    height: auto;
+    height: 40px;
+}
+.card header img{
+    width: 40px;
+    height: 40px;
+}
+.card header span{
+    font-weight: bolder ;
+    text-align: center;
+    margin: 0 0 0 auto;
+    
+}
+.card header h4{
+    margin: 0;
+    font-weight: bolder;
+}
+/*card main*/
+.card main p, .card footer p{
+    color:rgb(143, 142, 142);
+    margin: 10px 0;
+}
+.card main p span{
+    font-size: 40px;
+}
+.card main p span span{
+    font-size: 20px;
+}
+/*card footer*/
+.card footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card footer p span{
+    font-size: 18px;
+    color: white;
 }
 
 

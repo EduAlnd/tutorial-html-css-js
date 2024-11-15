@@ -1,65 +1,85 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IF Finance</title>
     <link rel="stylesheet" href="css/styleif.css">
     <link rel="script" href="./js/main.js">
-   <script src="./js/main.js"></script>
-    </head>
-    <body>
-        <header>
-            <div class="wrapper">
-                <div id="logo">
-                    <a href="./index.html">
-                        <img src="./img/IF_logo.svg" alt="Logo">
-                    </a>
-                    <!--<h1>IF<span>Finance</span> </h1>-->
-                </div>
-                <nav>
-                    <ul>
-                        <li><a class="active" href="./index.html">Home</a></li>
-                        <li><a href="./quem-somos.html">Quem somos</a></li>
-                        <li><a href="./bolsas.html">Bolsas</a></li>
-                        <li><a href="./destaques.html">Destaques</a></li>
-                        <li><a href="./contatos.html">Contato</a></li>
-                    </ul>
-                </nav>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div id="logo">
+                <a href="./index.html">
+                    <img src="./img/IF_logo.svg" alt="Logo">
+                </a>
+                <!--<h1>IF<span>Finance</span> </h1>-->
             </div>
-        </header>
-        <main class="wrapper">
-            <div class="flexBetween">
-                <h1>Home</h1>
-                <button style="width: 115px; height: 30px;" onclick="flex()">+ Adicionar</button>
-            </div>
-            
-        </main>
-        <div class="modal" onclick="fechar(event)">
-            <main>
-               <header class="flexBetween">
-                <h2>teste</h2>
-                <h1>Adicionar ação</h1>
-                <button class="btnModal" onclick="fechar(event)">✕</button>
-            </header> 
-            <form action="">
-                <label for="">Nome</label>
-                <input type="text">
-                <label for="">Sigla</label>
-                <input type="text">
-                <label for="">Valor</label>
-                <input type="text">
-                <label for="">Quant.</label>
-                <input type="number">
-                <h1>Total: </h1>
-
-                
-
-            </form>
-            </main>
-
+            <nav>
+                <ul>
+                    <li><a class="active" href="./index.html">Home</a></li>
+                    <li><a href="./quem-somos.html">Quem somos</a></li>
+                    <li><a href="./bolsas.html">Bolsas</a></li>
+                    <li><a href="./destaques.html">Destaques</a></li>
+                    <li><a href="./contatos.html">Contato</a></li>
+                </ul>
+            </nav>
         </div>
-    </body>
+    </header>
+    <main class="wrapper">
+        <div class="flexBetween">
+            <h1>Home</h1>
+            <button style="width: 115px; height: 30px;" onclick="openModal()">+ Adicionar</button>
+        </div>
+        <div id="card-list">
+            <div class="card">
+                <header>
+                    <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Logo">
+                    <h4>Apple</h4>
+                    <span>AAPL</span>
+                </header>
+                <main>
+                    <p>Valor: <span style="color: lime;">150,00 <span>▲▼</span></p>
+                </main>
+                <footer>
+                    <p>Quantidade: <span>20</span></p>
+                    <p>Posição: <span>R$ 3000</span></p>
+                </footer>
+            </div>
+        </div>
+        
+    </main>
+    <div class="modal" onclick="closeModal(event)">
+        <main>
+            <header class="flexBetween">
+                <h1>Adicionar ação</h1>
+                <button onclick="closeModal()">✕</button>
+            </header>
+            <form onsubmit="handleSubmitAddTicker(event)">
+                <label for="urlLogo">URL Logo:</label>
+                <input type="text" name="urlLogo" id="urlLogo">
+
+                <label for="nameCompany">Nome da empresa:</label>
+                <input type="text" name="nameCompany" id="nameCompany">
+
+                <label for="ticker">Símbolo:</label>
+                <input type="text" name="ticker" id="ticker">
+
+                <label for="quantity">Quantidade:</label>
+                <input type="number" name="quantity" id="quantity"">
+
+                <label for="closeValue">Valor:</label>
+                <input type="text" name="closeValue" id="closeValue">
+
+                <input type="submit" value="Adicionar" style="width: 50%;">
+            </form>
+        </main>
+
+    </div>
+</body>
 
 </html>
