@@ -33,41 +33,28 @@
     <main class="wrapper">
         <div class="flexBetween">
             <h1>Home</h1>
-            <button style="width: 115px; height: 30px;" onclick="openModal()">+ Adicionar</button>
+            <button style="width: 115px; height: 30px;" onclick="openModal('#modal-add-card')">+ Adicionar</button>
         </div>
-        <div id="card-list">
-            <div class="card">
-                <header>
-                    <img src="https://cdn-icons-png.flaticon.com/512/0/747.png" alt="Logo">
-                    <h4>Apple</h4>
-                    <span>AAPL</span>
-                </header>
-                <main>
-                    <p>Valor: <span style="color: lime;">150,00 <span>▲▼</span></p>
-                </main>
-                <footer>
-                    <p>Quantidade: <span>20</span></p>
-                    <p>Posição: <span>R$ 3000</span></p>
-                </footer>
-            </div>
+        <!--CARDS DE AÇÕES-->
+        <div id="card-list">  
         </div>
-        
     </main>
-    <div class="modal" onclick="closeModal(event)">
+    <!--MODAL/FORM DE ADIÇÃO DE AÇÃO-->
+    <div class="modal" id="modal-add-card" onclick="closeModal(event, '#modal-add-card')">
         <main>
             <header class="flexBetween">
                 <h1>Adicionar ação</h1>
-                <button onclick="closeModal()">✕</button>
+                <button onclick="closeModal(null, '#modal-add-card')">✕</button>
             </header>
-            <form onsubmit="handleSubmitAddTicker(event)">
+            <form onsubmit="addCard(event)">
                 <label for="urlLogo">URL Logo:</label>
                 <input type="text" name="urlLogo" id="urlLogo">
 
                 <label for="nameCompany">Nome da empresa:</label>
                 <input type="text" name="nameCompany" id="nameCompany">
 
-                <label for="ticker">Símbolo:</label>
-                <input type="text" name="ticker" id="ticker">
+                <label for="card">Símbolo:</label>
+                <input type="text" name="card" id="card">
 
                 <label for="quantity">Quantidade:</label>
                 <input type="number" name="quantity" id="quantity"">
@@ -79,6 +66,33 @@
             </form>
         </main>
 
+    </div>
+    <div class="modal" id="modal-edit-card" onclick="closeModal(event, '#modal-edit-card')">
+        <main>
+            <header class="flexBetween">
+                <h1>Editar ação</h1>
+                <button onclick="closeModal(null, '#modal-edit-card')">✕</button>
+            </header>
+            <form onsubmit="updateCard(event)">
+
+                <label for="e-urlLogo">URL Logo:</label>
+                <input type="text" name="e-urlLogo" id="e-urlLogo">
+
+                <label for="e-nameCompany">Nome da empresa:</label>
+                <input type="text" name="e-nameCompany" id="e-nameCompany">
+
+                <label for="e-card">Símbolo:</label>
+                <input type="text" name="e-card" id="e-card">
+
+                <label for="e-quantity">Quantidade:</label>
+                <input type="number" name="e-quantity" id="e-quantity"">
+
+                <label for="e-closeValue">Valor:</label>
+                <input type="text" name="e-closeValue" id="e-closeValue">
+
+                <input type="submit" value="Editar" style="width: 50%;">
+            </form>
+        </main>
     </div>
 </body>
 
