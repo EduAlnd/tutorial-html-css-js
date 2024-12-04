@@ -1,0 +1,178 @@
+html, body, h1, h3, h4{
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    color: white;
+}
+main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 1000px;
+    margin: 0 auto;
+    height: 100%;
+}
+main button{
+    width: 300px;
+    height: 100px;
+    border-radius: 30px;
+    background-color: rgb(250, 130, 18);
+    border: 0;
+    margin: 20px 0;
+    font-size: larger;
+    font-weight: bolder;
+}
+main button:hover{
+    background-color: rgb(68, 224, 20);
+    
+}
+#quadro{
+    width: 900px;
+    height: 500px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+.card{
+    width: 150px;
+    height: 120px;
+    background-color: rgb(168, 168, 168);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#idade, #sexo, #nome{
+    display: flex;
+    width: 150px;
+    height: 20px;
+    margin-bottom: 10px;
+    align-items: center;
+
+}
+h4{
+    font-size: larger;
+    font-weight: 600;
+    margin-right: 5px;
+    color: aliceblue;
+}
+h3{
+    font-size: larger;
+    font-weight: 300;
+    margin-right: 5px;
+}
+.modal{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.397);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#addCard{
+    display:none;
+}
+#addCard main{
+    height: 300px;
+    width: 500px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+    color: white;
+}
+#addCard main header{
+   background-color: transparent;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+#addCard main header button{
+    background-color: black;
+    color: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px 0 50px;
+    border-radius: 20px;
+ }
+ #addCard main header h2{
+    padding: 20px;
+ }
+ #addCard main header button:hover{
+    color: rgb(0, 0, 0);
+    background-color: white;
+ }
+ 
+#addCard main form{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+ #addCard main form input[type=text], #addCard main form input[type=number], #addCard main form select{
+    background-color: rgb(73, 73, 73);
+    border-radius: 10px;
+    border: 0;
+    width: 250px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+}
+#addCard main form input[type=submit]{
+    margin: 0 auto;
+    background-color: rgb(71, 70, 70);
+    border: 0;
+    border-radius: 20px;
+    height: 40px;
+    width: 100px;
+    font-weight: bolder;
+    color: white;
+    margin-top: 10px;
+}
+#addCard main form input[type=submit]:hover{
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+.card footer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.548);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 20px;
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card footer button {
+    height: 30px;
+    width: 150px;
+    font-size: large;
+}
+#mouse{
+    background-color: rgb(250, 130, 18);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}

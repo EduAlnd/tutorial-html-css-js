@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.js">
+    <script src="./main.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Revisão 2 Bimestre</h1>  
+    </header>
+    <main>
+        <button onclick="onClick('addCard')">Onclick</button>
+        <div id="quadro">
+            <div class="card" onmouseenter="onMouseEnter(event)" onmouseleave="onMouseLeave(event)">
+                <div id="nome">
+                    <h3>Nome: </h3>
+                    <h4>Eduarda</h4>
+                </div>
+                <div id="idade">
+                    <h3>Idade: </h3>
+                    <h4>18</h4>
+                </div>
+                <div id="sexo">
+                    <h3>Sexo: </h3>
+                    <h4>Feminino</h4>
+                </div>
+                <div id="mouse">
+                    <h3>OnLeave</h3>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <div class="modal" id="addCard" onclick="closeModal(event, 'addCard')">
+        <main>
+            <header>
+                <h2>Onsubmit</h2>
+                <button onclick="closeModal(null, 'addCard')">✕</button>
+            </header>
+                    <form onsubmit="onSubmit(event)">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome">
+                        <label for="idade">Idade:</label>
+                        <input type="number" name="idade" id="idade">
+                        <label for="sexo">Sexo:</label>
+                        <select name="sexo" id="sexo">
+                            <option value="Feminino">Feminino</option>
+                            <option value="Masculino">Masculino</option>
+                        </select>
+                        <input type="submit" value="Onsubmit">
+                    </form>
+                
+        </main>
+    </div>
+    <div class="modal" id="editCard" onmouseenter="onMouseEnter()" style="display: none;">
+        
+    </div>
+</body>
+</html>
